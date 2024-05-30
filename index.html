@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chess randomizer</title>
+</head>
+<body>
+  <style>
+    .ata{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      display: blick;
+      font-size: 30px;
+    }
+    button{
+      background-color: #2596be;
+      color: white;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 3px;
+    }
+  </style>
+  <div class="ata">
+      <button onclick="lol()">Pls magic website randomize a miracle chess postion for my
+      weird ideas 🙏🙏🙏🙏</button>
+    <p id="texto">?</p>
+    </div>
+    <h3>Historic</h3>
+    <span id="hist"></p>
+
+        <script>
+          function lol(){
+        var lett = ["a", "b", "c", "d", "e", "f", "g", "h"]
+        var num = [1, 2, 3, 4, 5, 6, 7, 8]
+        var numero = lolo(num)
+        var letra = lolo(lett)
+        function lolo(numberol){
+        return numberol[Math.floor(Math.random()*numberol.length)]
+        }
+        document.getElementById("texto").innerHTML=`${letra}${numero}`
+          document.getElementById("hist").innerHTML+=`${letra}${numero}<br>`
+          }
+    </script>
+</body>
+</html>
